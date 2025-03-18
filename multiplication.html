@@ -168,7 +168,6 @@
             document.getElementById(id + 'n2').innerHTML = val[1];
             document.getElementById(id + 'n3').innerHTML = val[2];
             document.getElementById(id + 'n4').innerHTML = val[3];
-            alert(val);
         }
     }
 
@@ -369,7 +368,6 @@
 
         var url = window.location.href.split('?')[0] + '?';
         fullurl = url + qr.innerHTML;
-        alert(fullurl);
 
         // QR Code
         qr.innerHTML = '<br><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + encodeURIComponent(fullurl) + '">';
